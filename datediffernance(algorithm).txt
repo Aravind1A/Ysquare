@@ -1,0 +1,33 @@
+
+Strp-1: **User Input and Formatting:**
+   - The program starts by taking user input for the date and time in the format "DD-MM-YYYY hh:mm".
+   - It uses the `SimpleDateFormat` class to parse the input string into a `Date` object.
+
+Step-2: **Date Comparison:**
+   - The program compares the entered date with the current date to calculate the time difference in milliseconds.
+
+step-3: **Invalid Date Check:**
+   - If the calculated time difference is negative, it means the entered date is in the past, so the program prints "Invalid date."
+
+step-4: **Date Decomposition:**
+   - The program decomposes the entered and current dates to extract components like year, month, week of the year, and day of the year using the `Calendar` class.
+
+step-5: **Calculating Differences:**
+   - The program calculates the following differences:
+     - Difference in years: Calculated as the difference between current year and entered year.
+     - Difference in months: Calculated as the difference in months between current month and entered month, accounting for years.
+     - Difference in weeks: Calculated as the difference in weeks between current week and entered week, accounting for years.
+     - Difference in days: Calculated as the difference in days between current day and entered day, accounting for years.
+     - Difference in minutes: If the difference is in the same day and the entered time is in the future, the program calculates the difference in minutes.
+
+step-6: **Output:**
+   - The program prints the calculated differences based on the conditions you specified.
+
+setp-7: **Error Handling:**
+   - The program handles errors using `ParseException` to catch issues with parsing the input date.
+
+step-8: **Results:**
+   - The program provides the user with information about the difference in years, months, weeks, days, or minutes based on the input date and current date.
+
+step-9: **Completion:**
+   - The program execution completes after printing the appropriate result or error message.

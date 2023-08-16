@@ -1,0 +1,24 @@
+
+Step-1: **Read Emails from Files:**
+   - Read the emails from both `file1.txt` and `file2.txt` and store them in separate lists or sets.
+
+Step-2: **Print Emails Present in Both Files:**
+   - Create an empty set to store common emails.
+   - Iterate through the emails in one of the sets.
+   - Check if each email exists in the other set. If it does, add it to the common emails set.
+   - Print the common emails set.
+
+Step-3: **Print Emails Present in File1 but Not in File2:**
+   - Create a copy of the emails set from `file1.txt`.
+   - Remove all the emails that are also present in the emails set from `file2.txt`.
+   - Print the remaining emails in the copy.
+
+Step-4: **Print Emails Present in File2 but Not in File1:**
+   - Create a copy of the emails set from `file2.txt`.
+   - Remove all the emails that are also present in the emails set from `file1.txt`.
+   - Print the remaining emails in the copy.
+
+Step-5: **Print All Unique Emails in Both Files:**
+   - Create a union of the emails sets from both files to get all unique emails.
+   - Print the union set.
+

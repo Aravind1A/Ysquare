@@ -1,0 +1,27 @@
+Step-1: **Ask for Input:**
+   - Ask the user to enter the file path, word to find (word1), and word to replace with (word2) through the command line.
+
+Step-2: **Read File Content:**
+   - Define a method `readFile(filePath)` to read the content of the specified file.
+   - Initialize an empty string named `fileContent`.
+   - Open a `BufferedReader` using the `FileReader` for the given file path.
+   - Read each line from the file and append it to the `fileContent` with a newline character.
+   - Close the `BufferedReader` after reading is complete.
+   - Return the `fileContent`.
+
+Step-3: **Perform Replacement:**
+   - Use the `replaceAll` method on the `fileContent` string to replace all occurrences of `word1` with `word2`.
+   - Store the modified content in a new string named `replacedContent`.
+
+Step-4: **Write Modified Content:**
+   - Define a method `writeFile(filePath, content)` to write the modified content back to the same file.
+   - Open a `PrintWriter` using the `FileWriter` for the given file path.
+   - Write the `content` (modified content) to the file.
+   - Close the `PrintWriter` after writing is complete.
+
+Step-5: **Main Program:**
+   - Call the `readFile(filePath)` method to read the content of the specified file.
+   - Call the `replaceAll` method on the `fileContent` to perform the replacement.
+   - Call the `writeFile(filePath, replacedContent)` method to save the modified content back to the file.
+   - Print a success message indicating that the replacement was successful and the file was saved.
+
